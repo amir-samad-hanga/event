@@ -85,5 +85,13 @@ defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 //Custom defined
-define('SITE_NAME', 'Event Saga');
-define('SITE_INFO_EMAIL', 'info@eventsaga.com');
+defined('SITE_NAME')		   OR define('SITE_NAME', 'Event Saga');
+defined('SITE_INFO_EMAIL')	   OR define('SITE_INFO_EMAIL', 'info@eventsaga.com');
+
+/* Page Name  */
+defined('ADMIN_DASHBOARD_PAGE') OR define('ADMIN_DASHBOARD_PAGE', 'adminDashboard');
+defined('ADMIN_SIGNIN_PAGE') OR define('ADMIN_SIGNIN_PAGE', 'adminSignIn');
+defined('ADMIN_REGISTER_PAGE') OR define('ADMIN_REGISTER_PAGE', 'adminRegister');
+defined('ADMIN_EVENT_CREATE_PAGE') OR define('ADMIN_EVENT_CREATE_PAGE', 'adminCreateEvent');
+
+/* Page Name Ends */

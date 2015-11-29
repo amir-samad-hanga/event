@@ -18,6 +18,23 @@
     <!--LOADING STYLESHEET FOR PAGE-->
     <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/intro.js/introjs.css'); ?>">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/calendar/zabuto_calendar.min.css'); ?>">
+
+	
+	<!-- UI editors for event form page-->
+		<link type="text/css" rel="stylesheet" href="vendors/bootstrap-markdown/css/bootstrap-markdown.min.css">
+		<link type="text/css" rel="stylesheet" href="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+		<link type="text/css" rel="stylesheet" href="vendors/summernote/summernote.css">
+	<!-- UI editors for event form page ends -->	
+	<!--   added for event form page    --> 
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-colorpicker/css/colorpicker.css'); ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-datepicker/css/datepicker.css'); ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-daterangepicker/daterangepicker-bs3.css'); ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'); ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css'); ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-clockface/css/clockface.css'); ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-switch/css/bootstrap-switch.css'); ?>">
+	<!--  end added for event form page  -->
+	
     <!--Loading style vendors-->
     <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/animate.css/animate.css'); ?>">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/vendors/jquery-pace/pace.css'); ?>">
@@ -548,7 +565,5 @@
                 <div class="chat-textarea"><input placeholder="Type your message" class="form-control"/></div>
             </div>
         </div>
-        <!--END CHAT FORM-->
-
-<!--BEGIN PAGE WRAPPER-->
-        <div id="page-wrapper">		
+        <!--END CHAT FORM--><!--BEGIN PAGE WRAPPER-->
+        <div id="page-wrapper">

@@ -25,7 +25,7 @@
 <script src="<?php echo base_url('assets/vendors/holder/holder.js'); ?>"></script>
 <script src="<?php echo base_url('assets/vendors/responsive-tabs/responsive-tabs.js'); ?>"></script>
 <!--LOADING SCRIPTS FOR PAGE-->
-<script src="<?php echo base_url('assets/vendors/intro.js/intro.js'); ?>"></script>
+<!--script src="<?php echo base_url('assets/vendors/intro.js/intro.js'); ?>"></script>
 <script src="<?php echo base_url('assets/vendors/flot-chart/jquery.flot.js'); ?>"></script>
 <script src="<?php echo base_url('assets/vendors/flot-chart/jquery.flot.categories.js'); ?>"></script>
 <script src="<?php echo base_url('assets/vendors/flot-chart/jquery.flot.pie.js'); ?>"></script>
@@ -35,7 +35,24 @@
 <script src="<?php echo base_url('assets/vendors/flot-chart/jquery.flot.stack.js'); ?>"></script>
 <script src="<?php echo base_url('assets/vendors/flot-chart/jquery.flot.spline.js'); ?>"></script>
 <script src="<?php echo base_url('assets/vendors/calendar/zabuto_calendar.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/index.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/index.js'); ?>"></script-->
+
+
+
+<!-- for event create page -->
+<script src="<?php echo base_url('assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/bootstrap-daterangepicker/daterangepicker.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/moment/moment.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/bootstrap-timepicker/js/bootstrap-timepicker.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/bootstrap-clockface/js/clockface.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/bootstrap-switch/js/bootstrap-switch.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/vendors/jquery-maskedinput/jquery-maskedinput.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/form-components.js'); ?>"></script>
+<!-- end for event create page -->
+
+
 <!--CORE JAVASCRIPT-->
 <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 <script>(function (i, s, o, g, r, a, m) {

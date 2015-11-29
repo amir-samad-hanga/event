@@ -1,0 +1,2140 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head><title>Documentation | μAdmin - Responsive Multi-Style Admin Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <!--Loading bootstrap css-->
+    <link type="text/css"
+          href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+    <link type="text/css" rel="stylesheet"
+          href="vendors/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.css">
+    <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!--Loading style vendors-->
+    <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+    <!--Loading style-->
+    <link type="text/css" rel="stylesheet" href="css/style-mango.css" id="theme-style">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="vendors/google-code-prettify/prettify.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body onload="prettyPrint()" style="height: 100%">
+<div id="docs-page" class="ptl"><a id="totop" href="#"><i class="fa fa-angle-up"></i></span></a>
+
+<div class="panel">
+    <div class="panel-body pal"><h1 class="docs-title">μAdmin - Responsive Multi-Style Admin Template</h1><h4
+            class="docs-subtitle">Version 1.2 Documentation</h4></div>
+</div>
+<div id="docs-page-content">
+<div class="tabbable tabs-right">
+<ul id="docs-tabs" class="nav nav-tabs">
+    <li class="active"><a href="#tab-overview" data-toggle="tab">1. Overview</a></li>
+    <li><a href="#tab-template-structure" data-toggle="tab">2. Template Structure</a></li>
+    <li><a href="#tab-fonts" data-toggle="tab">3. Fonts</a></li>
+    <li><a href="#tab-colors-theme" data-toggle="tab">4. Theme Colors</a></li>
+    <li><a href="#tab-top-bar" data-toggle="tab">5. Top Bar</a></li>
+    <li><a href="#tab-sidebar-menu" data-toggle="tab">6. Sidebar Menu</a></li>
+    <li><a href="#tab-core-stylesheet" data-toggle="tab">7. Core Stylesheet</a></li>
+    <li><a href="#tab-javascript-plugins" data-toggle="tab">8. Javascript Plugins & Resources</a></li>
+    <li><a href="#tab-change-logs" data-toggle="tab">9. Change logs</a></li>
+    <li><a href="#tab-end-documentation" data-toggle="tab">10. End of Documentation</a></li>
+</ul>
+<div id="docs-tabs-content" class="tab-content">
+<div id="tab-overview" class="tab-pane fade in active"><h3 class="block-heading mtn">1. Overview</h3>
+  <div class="row">
+    <div class="col-md-6 text-justify" id="overview"><p>
+
+      <p>μAdmin is The Ultimate Responsive Admin Template.</p>
+      <p>μAdmin built on Bootstrap 3.1 Framework with <strong>full responsive</strong> technique. It's a multiform template with <strong>two style</strong> and more than <strong>20 color themes</strong>, so you can use μAdmin for many types of web applications like custom admin panel, admin dashboard, application backend, etc.</p>
+
+      <p>μAdmin have many kind of <strong>Transition effects</strong>, <strong>UI Element</strong> and components to make your application excited and professional. Beside it, Charts option included will provide many ideas for you to update status of business continuously.</p>
+      <p>
+      Enjoy using μAdmin and stay tuned information. If you have any suggestion, contact with us <a href="mailto:admin@swlabs.co">admin@swlabs.co</a>
+      </p><p>New features will be coming soon in future.</p>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+            <table class="table-overview">
+                <tr>
+                    <td><strong>Author:</strong></td>
+                    <td><a href="">Swlabs</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Contact:</strong></td>
+                    <td><a href="mailto:admin@swlabs.co">admin@swlabs.co</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Create on:</strong></td>
+                    <td>12/06/2014</td>
+                </tr>
+            </table>
+            <p><a href="http://swlabs.co/madmin" target='_blank' class="btn btn-yellow btn-square btn-outlined btn-lg mrxxl">Live Preview</a><a
+                    href="http://themeforest.net/item/madmin-responsive-multistyle-admin-template/7996710?WT.ac=category_item&WT.z_author=swlabs&ref=swlabs" target='_blank' class="btn btn-primary btn-square btn-outlined btn-lg">Purchase</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      
+    </div>
+  </div>    
+</div>
+<div id="tab-template-structure" class="tab-pane fade"><h3 class="block-heading mtn">2. Template Structure</h3>
+
+<p>Template Structure includes <code>Top
+Bar</code>, <code>Top
+Menu</code>, <code>Sidebar
+Menu</code>, <code>Content</code>, <code>Footer</code></p><h4 class="block-sub-heading">Page
+    Head</h4>
+
+<p>Page head contains title, metadata, css.</p><pre
+        class="prettyprint linenums">&#x3C;head&#x3E;&#x3C;title&#x3E;Dashboard | Dashboard&#x3C;/title&#x3E;
+    &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+    &#x3C;meta http-equiv=&#x22;X-UA-Compatible&#x22; content=&#x22;IE=edge,chrome=1&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+    &#x3C;link rel=&#x22;shortcut icon&#x22; href=&#x22;images/icons/favicon.ico&#x22;&#x3E;
+    &#x3C;link rel=&#x22;apple-touch-icon&#x22; href=&#x22;images/icons/favicon.png&#x22;&#x3E;
+    &#x3C;link rel=&#x22;apple-touch-icon&#x22; sizes=&#x22;72x72&#x22; href=&#x22;images/icons/favicon-72x72.png&#x22;&#x3E;
+    &#x3C;link rel=&#x22;apple-touch-icon&#x22; sizes=&#x22;114x114&#x22; href=&#x22;images/icons/favicon-114x114.png&#x22;&#x3E;
+    &#x3C;!--Loading bootstrap css--&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;http://fonts.googleapis.com/css?family=Oswald:400,700,300&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.css&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/font-awesome/css/font-awesome.min.css&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap/css/bootstrap.min.css&#x22;&#x3E;
+    &#x3C;!--LOADING SCRIPTS FOR PAGE--&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-news-ticker/jquery.news-ticker.css&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/calendar/zabuto_calendar.min.css&#x22;&#x3E;
+    &#x3C;!--Loading style vendors--&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/animate.css/animate.css&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-pace/pace.css&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/iCheck/skins/all.css&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-news-ticker/jquery.news-ticker.css&#x22;&#x3E;
+    &#x3C;!--Loading style--&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/themes/style1/green-dark.css&#x22; id=&#x22;theme-change&#x22; class=&#x22;style-change color-change&#x22;&#x3E;
+    &#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/style-responsive.css&#x22;&#x3E;
+&#x3C;/head&#x3E;</pre>
+<h4 class="block-sub-heading">Top Bar</h4>
+
+<p>Top Bar contains logo, dashboard style, form search, top menu.</p><pre
+        class="prettyprint linenums">&#x3C;nav id=&#x22;topbar&#x22; role=&#x22;navigation&#x22; style=&#x22;margin-bottom: 0;&#x22; class=&#x22;navbar navbar-default navbar-static-top&#x22;&#x3E;
+   &#x3C;div class=&#x22;navbar-header&#x22;&#x3E;
+      &#x3C;button type=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22; data-target=&#x22;.sidebar-collapse&#x22; class=&#x22;navbar-toggle&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;Toggle navigation&#x3C;/span&#x3E;&#x3C;span class=&#x22;icon-bar&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;icon-bar&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;icon-bar&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/button&#x3E;
+      &#x3C;a id=&#x22;logo&#x22; href=&#x22;index.html&#x22; class=&#x22;navbar-brand&#x22;&#x3E;&#x3C;span class=&#x22;fa fa-rocket&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;logo-text&#x22;&#x3E;&#xB5;Admin&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+   &#x3C;/div&#x3E;
+   &#x3C;div class=&#x22;topbar-main&#x22;&#x3E;
+      &#x3C;a id=&#x22;menu-toggle&#x22; href=&#x22;#&#x22; class=&#x22;hidden-xs&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+      &#x3C;ul class=&#x22;nav navbar-nav    &#x22;&#x3E;
+         &#x3C;li class=&#x22;active&#x22;&#x3E;&#x3C;a href=&#x22;index.html&#x22;&#x3E;Dashboard&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+         &#x3C;li&#x3E;
+            &#x3C;a href=&#x22;javascript:;&#x22; data-toggle=&#x22;dropdown&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;Layouts
+            &#x26;nbsp;&#x3C;i class=&#x22;fa fa-angle-down&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+            &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-left-sidebar.html&#x22;&#x3E;Left Sidebar&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-right-sidebar.html&#x22;&#x3E;Right Sidebar&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-left-sidebar-collasped.html&#x22;&#x3E;Left Sidebar Collasped&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-right-sidebar-collasped.html&#x22;&#x3E;Right Sidebar Collasped&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li class=&#x22;dropdown-submenu&#x22;&#x3E;
+                  &#x3C;a href=&#x22;javascript:;&#x22; data-toggle=&#x22;dropdown&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;More Options&#x3C;/a&#x3E;
+                  &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                     &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Second level link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                     &#x3C;li class=&#x22;dropdown-submenu&#x22;&#x3E;
+                        &#x3C;a href=&#x22;javascript:;&#x22; data-toggle=&#x22;dropdown&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;More Options&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Third level link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Third level link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Third level link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Third level link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Third level link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                     &#x3C;/li&#x3E;
+                     &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Second level link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;/ul&#x3E;
+               &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+         &#x3C;/li&#x3E;
+         &#x3C;li class=&#x22;mega-menu-dropdown&#x22;&#x3E;
+            &#x3C;a href=&#x22;javascript:;&#x22; data-toggle=&#x22;dropdown&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;UI Elements
+            &#x26;nbsp;&#x3C;i class=&#x22;fa fa-angle-down&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+            &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;div class=&#x22;mega-menu-content&#x22;&#x3E;
+                     &#x3C;div class=&#x22;row&#x22;&#x3E;
+                        &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                           &#x3C;li&#x3E;
+                              &#x3C;h3&#x3E;Neque porro quisquam&#x3C;/h3&#x3E;
+                           &#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Lorem ipsum dolor sit amet&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Consectetur adipisicing elit&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Sed ut perspiciatis unde omnis&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;At vero eos et accusamus et iusto&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Nam libero tempore cum soluta&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Et harum quidem rerum facilis est&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                        &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                           &#x3C;li&#x3E;
+                              &#x3C;h3&#x3E;Neque porro quisquam&#x3C;/h3&#x3E;
+                           &#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Lorem ipsum dolor sit amet&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Consectetur adipisicing elit&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Sed ut perspiciatis unde omnis&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;At vero eos et accusamus et iusto&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Nam libero tempore cum soluta&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Et harum quidem rerum facilis est&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                        &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                           &#x3C;li&#x3E;
+                              &#x3C;h3&#x3E;Neque porro quisquam&#x3C;/h3&#x3E;
+                           &#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Lorem ipsum dolor sit amet&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Consectetur adipisicing elit&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Sed ut perspiciatis unde omnis&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;At vero eos et accusamus et iusto&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Nam libero tempore cum soluta&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Et harum quidem rerum facilis est&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                     &#x3C;/div&#x3E;
+                  &#x3C;/div&#x3E;
+               &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+         &#x3C;/li&#x3E;
+         &#x3C;li class=&#x22;mega-menu-dropdown mega-menu-full&#x22;&#x3E;
+            &#x3C;a href=&#x22;javascript:;&#x22; data-toggle=&#x22;dropdown&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;Extras
+            &#x26;nbsp;&#x3C;i class=&#x22;fa fa-angle-down&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+            &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;div class=&#x22;mega-menu-content&#x22;&#x3E;
+                     &#x3C;div class=&#x22;row&#x22;&#x3E;
+                        &#x3C;div class=&#x22;col-md-7&#x22;&#x3E;
+                           &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                              &#x3C;li&#x3E;
+                                 &#x3C;h3&#x3E;Neque porro quisquam&#x3C;/h3&#x3E;
+                              &#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Lorem ipsum dolor sit amet&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Consectetur adipisicing elit&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Sed ut perspiciatis unde omnis&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;At vero eos et accusamus et iusto&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Nam libero tempore cum soluta&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Et harum quidem rerum facilis est&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;/ul&#x3E;
+                           &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                              &#x3C;li&#x3E;
+                                 &#x3C;h3&#x3E;Neque porro quisquam&#x3C;/h3&#x3E;
+                              &#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Lorem ipsum dolor sit amet&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Consectetur adipisicing elit&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Sed ut perspiciatis unde omnis&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;At vero eos et accusamus et iusto&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Nam libero tempore cum soluta&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Et harum quidem rerum facilis est&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;/ul&#x3E;
+                           &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                              &#x3C;li&#x3E;
+                                 &#x3C;h3&#x3E;Neque porro quisquam&#x3C;/h3&#x3E;
+                              &#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Lorem ipsum dolor sit amet&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Consectetur adipisicing elit&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Sed ut perspiciatis unde omnis&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;At vero eos et accusamus et iusto&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Nam libero tempore cum soluta&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;Et harum quidem rerum facilis est&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;/ul&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;col-md-5 document-demo&#x22;&#x3E;
+                           &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-info-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Introduction&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-download&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Installation&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;/ul&#x3E;
+                           &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;T3 Settings&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-desktop&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Layout System&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;/ul&#x3E;
+                           &#x3C;ul class=&#x22;col-md-4 mega-menu-submenu&#x22;&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-magic&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;Customization&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                              &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-question-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span&#x3E;FAQs&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                           &#x3C;/ul&#x3E;
+                        &#x3C;/div&#x3E;
+                     &#x3C;/div&#x3E;
+                  &#x3C;/div&#x3E;
+               &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+         &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+      &#x3C;form id=&#x22;topbar-search&#x22; action=&#x22;&#x22; method=&#x22;&#x22; class=&#x22;hidden-sm hidden-xs&#x22;&#x3E;
+         &#x3C;div class=&#x22;input-icon right&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;input type=&#x22;text&#x22; placeholder=&#x22;Search here...&#x22; class=&#x22;form-control&#x22;/&#x3E;&#x3C;/div&#x3E;
+      &#x3C;/form&#x3E;
+      &#x3C;div class=&#x22;news-update-box hidden-xs&#x22;&#x3E;
+         &#x3C;span class=&#x22;text-uppercase mrm pull-left&#x22;&#x3E;News:&#x3C;/span&#x3E;
+         &#x3C;ul id=&#x22;news-update&#x22; class=&#x22;ticker list-unstyled&#x22;&#x3E;
+            &#x3C;li&#x3E;Welcome to &#x3BC;Admin - Responsive Multi-Style Admin Template&#x3C;/li&#x3E;
+            &#x3C;li&#x3E;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.&#x3C;/li&#x3E;
+         &#x3C;/ul&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;ul class=&#x22;nav navbar-top-links navbar-right&#x22;&#x3E;
+         &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
+            &#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-bell fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-green&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+            &#x3C;ul class=&#x22;dropdown-menu dropdown-alerts&#x22;&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;p&#x3E;You have 14 new notifications&#x3C;/p&#x3E;
+               &#x3C;/li&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;div class=&#x22;dropdown-slimscroll&#x22;&#x3E;
+                     &#x3C;ul&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-blue&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-comment&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;New Comment&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;4 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-violet&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-twitter&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;3 New Followers&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;12 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-pink&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;Message Sent&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;15 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-green&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;New Task&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;18 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-yellow&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-upload&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;Server Rebooted&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;19 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-green&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;New Task&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;2 days ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-pink&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;Message Sent&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;5 days ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                     &#x3C;/ul&#x3E;
+                  &#x3C;/div&#x3E;
+               &#x3C;/li&#x3E;
+               &#x3C;li class=&#x22;last&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;text-right&#x22;&#x3E;See all alerts&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+         &#x3C;/li&#x3E;
+         &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
+            &#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-orange&#x22;&#x3E;7&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+            &#x3C;ul class=&#x22;dropdown-menu dropdown-messages&#x22;&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;p&#x3E;You have 14 new messages&#x3C;/p&#x3E;
+               &#x3C;/li&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;div class=&#x22;dropdown-slimscroll&#x22;&#x3E;
+                     &#x3C;ul&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;Jessica Spencer&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Smith&#x3C;span class=&#x22;label label-blue pull-right&#x22;&#x3E;New&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Doe&#x3C;span class=&#x22;label label-orange pull-right&#x22;&#x3E;10 min&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Smith&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Smith&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                     &#x3C;/ul&#x3E;
+                  &#x3C;/div&#x3E;
+               &#x3C;/li&#x3E;
+               &#x3C;li class=&#x22;last&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Read all messages&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+         &#x3C;/li&#x3E;
+         &#x3C;li class=&#x22;dropdown&#x22;&#x3E;
+            &#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-yellow&#x22;&#x3E;8&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+            &#x3C;ul class=&#x22;dropdown-menu dropdown-tasks&#x22;&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;p&#x3E;You have 14 pending tasks&#x3C;/p&#x3E;
+               &#x3C;/li&#x3E;
+               &#x3C;li&#x3E;
+                  &#x3C;div class=&#x22;dropdown-slimscroll&#x22;&#x3E;
+                     &#x3C;ul&#x3E;
+                        &#x3C;li&#x3E;
+                           &#x3C;a href=&#x22;#&#x22;&#x3E;
+                              &#x3C;span class=&#x22;task-item&#x22;&#x3E;Fix the HTML code&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;40%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+                              &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                                 &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;40&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 40%;&#x22; class=&#x22;progress-bar progress-bar-orange&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;40% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                              &#x3C;/div&#x3E;
+                           &#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                           &#x3C;a href=&#x22;#&#x22;&#x3E;
+                              &#x3C;span class=&#x22;task-item&#x22;&#x3E;Make a wordpress theme&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;60%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+                              &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                                 &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;60&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 60%;&#x22; class=&#x22;progress-bar progress-bar-blue&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;60% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                              &#x3C;/div&#x3E;
+                           &#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                           &#x3C;a href=&#x22;#&#x22;&#x3E;
+                              &#x3C;span class=&#x22;task-item&#x22;&#x3E;Convert PSD to HTML&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;55%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+                              &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                                 &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;55&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 55%;&#x22; class=&#x22;progress-bar progress-bar-green&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;55% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                              &#x3C;/div&#x3E;
+                           &#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;
+                           &#x3C;a href=&#x22;#&#x22;&#x3E;
+                              &#x3C;span class=&#x22;task-item&#x22;&#x3E;Convert HTML to Wordpress&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;78%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+                              &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                                 &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;78&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 78%;&#x22; class=&#x22;progress-bar progress-bar-yellow&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;78% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                              &#x3C;/div&#x3E;
+                           &#x3C;/a&#x3E;
+                        &#x3C;/li&#x3E;
+                     &#x3C;/ul&#x3E;
+                  &#x3C;/div&#x3E;
+               &#x3C;/li&#x3E;
+               &#x3C;li class=&#x22;last&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;See all tasks&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+         &#x3C;/li&#x3E;
+         &#x3C;li class=&#x22;dropdown topbar-user&#x22;&#x3E;
+            &#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x26;nbsp;&#x3C;span&#x3E;John Doe&#x3C;/span&#x3E;&#x26;nbsp;&#x3C;span class=&#x22;caret&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+            &#x3C;ul class=&#x22;dropdown-menu dropdown-user pull-right&#x22;&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-profile.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-user&#x22;&#x3E;&#x3C;/i&#x3E;My Profile&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;page-calendar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-calendar&#x22;&#x3E;&#x3C;/i&#x3E;My Calendar&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;email-inbox.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;My Inbox&#x3C;span class=&#x22;badge badge-danger&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;My Tasks&#x3C;span class=&#x22;badge badge-success&#x22;&#x3E;7&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-lock-screen.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-lock&#x22;&#x3E;&#x3C;/i&#x3E;Lock Screen&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+               &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signin.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-key&#x22;&#x3E;&#x3C;/i&#x3E;Log Out&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+         &#x3C;/li&#x3E;
+         &#x3C;li id=&#x22;topbar-chat&#x22; class=&#x22;hidden-xs&#x22;&#x3E;&#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;btn-chat&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-comments&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-info&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+   &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</pre>
+<h4 class="block-sub-heading">Sidebar Menu</h4>
+
+<p>Sidebar Menu contains main navigation menu.</p><pre
+        class="prettyprint linenums">&#x3C;nav id=&#x22;sidebar&#x22; role=&#x22;navigation&#x22; class=&#x22;navbar-default navbar-static-side&#x22;&#x3E;
+            &#x3C;div class=&#x22;sidebar-collapse menu-scroll&#x22;&#x3E;
+                &#x3C;ul id=&#x22;side-menu&#x22; class=&#x22;nav&#x22;&#x3E;
+                    &#x3C;li class=&#x22;user-panel&#x22;&#x3E;
+                        &#x3C;div class=&#x22;thumb&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-circle&#x22;/&#x3E;&#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;info&#x22;&#x3E;&#x3C;p&#x3E;John Doe&#x3C;/p&#x3E;
+                            &#x3C;ul class=&#x22;list-inline list-unstyled&#x22;&#x3E;
+                                &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-profile.html&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Profile&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-user&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;li&#x3E;&#x3C;a href=&#x22;email-inbox.html&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Mail&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Setting&#x22; data-toggle=&#x22;modal&#x22; data-target=&#x22;#modal-config&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signin.html&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Logout&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sign-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;/ul&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;clearfix&#x22;&#x3E;&#x3C;/div&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;active&#x22;&#x3E;&#x3C;a href=&#x22;index.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tachometer fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Dashboard&#x3C;/span&#x3E;&#x3C;span class=&#x22;badge badge-yellow&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-desktop fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Layouts&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-left-sidebar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-align-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Left Sidebar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-left-sidebar-collapsed.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Left Sidebar Collapsed&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-right-sidebar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-align-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Right Sidebar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-right-sidebar-collapsed.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Right Sidebar Collapsed&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-horizontal-menu.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-header&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Horizontal Menu&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-horizontal-menu-sidebar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-h-square&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Horizontal Menu &#x26; Sidebar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-fixed-topbar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-magnet&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Fixed Topbar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-boxed.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-columns&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Boxed Layout&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-hidden-footer.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-eye-slash&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Hidden Footer&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-header-topbar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-paperclip&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Header &#x26; Topbar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-title-breadcrumb.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-link&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Title &#x26; Breadcrumb&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-send-o fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;UI Elements&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-generals.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-briefcase&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Generals&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-panels.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-th-large&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Panels&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-buttons.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-hand-o-up&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Buttons&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-tabs.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-trello&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Tabs&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-progressbars.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-ellipsis-h&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Progress Bars&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-editors.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-edit&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Editors&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-typography.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-font&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Typography&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-modals.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-list-alt&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Modals&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-sliders.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-arrows-h&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sliders&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-nestable-list.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-list-ol&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Nestable List&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-icons.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tint&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Icons&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-notific8-notifications.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Notific8 Notifications&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-toastr-notifications.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-triangle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Toastr Notifications&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-checkbox-radio.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-dot-circle-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Checkbox &#x26; Radio&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-treeview.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Tree View&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-portlets.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-instagram&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Portlets&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-edit fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Forms&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;form-layouts.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-columns&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Layouts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;form-basic.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-file-text-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Basics&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;form-components.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cubes&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Components&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;form-wizard.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-magic&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;From Wizard&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;form-validation.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Validation&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;form-multiple-file-upload.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-upload&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Multiple File Upload&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;form-dropzone-file-upload.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cloud-upload&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Dropzone File Upload&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-th-list fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Tables&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;table-basic.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-th-large&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Basic Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;table-responsive.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tablet&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Responsive Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;table-action.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tencent-weibo&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Action Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;table-filter.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-filter&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Filter Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;table-advanced.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-indent&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Advanced Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;table-sample.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-table&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sample Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-file-o fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Pages&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;page-gallery.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-suitcase&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Gallery&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;page-timeline.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-steam&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Timeline&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;page-blog.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-puzzle-piece&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Blog&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;page-blog-item.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-chain&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Blog Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;page-about.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-group&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;About Us&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;page-contact.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-send-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Contact Us&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;page-calendar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-calendar&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Full Calendar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-gift fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Extras&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-profile.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-user&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;User Profile&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signin.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sign-in&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sign In&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signup.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sign-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sign Up&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-lock-screen.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-lock&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Lock Screen&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-invoice.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-print&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Invoice&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-faq.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-graduation-cap&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;FAQ&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-pricing-table.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-money&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Pricing Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-blank.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-file-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Blank&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-404.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;404 Page&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-500.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;500 Page&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;javascript:void(0)&#x22; title=&#x22;FullScreen&#x22; class=&#x22;btn-fullscreen&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-arrows&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Full Screen&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sitemap fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Multi-Level Dropdown&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Second Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Second Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                                &#x3C;ul class=&#x22;nav nav-third-level&#x22;&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E; Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;/ul&#x3E;
+                            &#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Email&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;email-inbox.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-inbox&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Inbox&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;email-compose-mail.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-pencil&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Compose Mail&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;email-view-mail.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-eye&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;View Mail&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-bar-chart-o fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Charts&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-flotchart.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Flot Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-chartjs.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Chartjs&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;HighCharts&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                                &#x3C;ul class=&#x22;nav nav-third-level&#x22;&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-line.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Line Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-area.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Area Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-column-bar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Column &#x26; Bar Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-pie.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Pie Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-scatter-bubble.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Scatter &#x26; Bubble Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-dynamic.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Dynamic Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-combinations.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Combinations&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-more.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;More Chart Types&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                &#x3C;/ul&#x3E;
+                            &#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;animations.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-slack fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Animations&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/nav&#x3E;</pre>
+<h4 class="block-sub-heading">Content</h4>
+
+<p>Content includes page title, breadcrumbs, page's main body and footer.</p><pre class="prettyprint linenums">&#x3C;div id=&#x22;title-breadcrumb-option-demo&#x22; class=&#x22;page-title-breadcrumb&#x22;&#x3E;
+    &#x3C;div class=&#x22;page-header pull-left&#x22;&#x3E;
+        &#x3C;div class=&#x22;page-title&#x22;&#x3E;Dashboard&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;ol class=&#x22;breadcrumb page-breadcrumb pull-right&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;i class=&#x22;fa fa-home&#x22;&#x3E;&#x3C;/i&#x3E;&#x26;nbsp;&#x3C;a href=&#x22;index.html&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;hidden&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Dashboard&#x3C;/a&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;active&#x22;&#x3E;Dashboard&#x3C;/li&#x3E;
+    &#x3C;/ol&#x3E;
+    &#x3C;div class=&#x22;clearfix&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;page-content&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;div id=&#x22;footer&#x22;&#x3E;
+    &#x3C;div class=&#x22;copyright&#x22;&#x3E;2014 &#xA9; &#x26;mu;Admin - Responsive Multi-Style Admin Template&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+<h4 class="block-sub-heading">End Body - Javascript</h4>
+
+<p>Javascript files loaded in the end of page.</p><pre
+        class="prettyprint linenums">&#x3C;script src=&#x22;js/jquery-1.10.2.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/jquery-migrate-1.2.1.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/jquery-ui.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;!--loading bootstrap js--&#x3E;
+&#x3C;script src=&#x22;vendors/bootstrap/js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/html5shiv.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/respond.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/metisMenu/jquery.metisMenu.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/slimScroll/jquery.slimscroll.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-cookie/jquery.cookie.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/iCheck/icheck.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/iCheck/custom.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-news-ticker/jquery.news-ticker.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/jquery.menu.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-pace/pace.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/holder/holder.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;!--LOADING SCRIPTS FOR PAGE--&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.categories.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.pie.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.tooltip.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.resize.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.fillbetween.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.stack.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.spline.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-news-ticker/jquery.news-ticker.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/calendar/zabuto_calendar.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/index.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;!--CORE JAVASCRIPT--&#x3E;
+&#x3C;script src=&#x22;js/main.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+<h4 class="block-sub-heading">HTML Code Comment Sample</h4><pre class="prettyprint linenums">&#x3C;!--BEGIN PAGE WRAPPER--&#x3E;
+&#x3C;div id=&#x22;page-wrapper&#x22;&#x3E;&#x3C;!--BEGIN TITLE &#x26; BREADCRUMB PAGE--&#x3E;
+&#x3C;div id=&#x22;title-breadcrumb-option-demo&#x22; class=&#x22;page-title-breadcrumb&#x22;&#x3E;
+    &#x3C;div class=&#x22;page-header pull-left&#x22;&#x3E;
+        &#x3C;div class=&#x22;page-title&#x22;&#x3E;Dashboard&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;ol class=&#x22;breadcrumb page-breadcrumb pull-right&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;i class=&#x22;fa fa-home&#x22;&#x3E;&#x3C;/i&#x3E;&#x26;nbsp;&#x3C;a href=&#x22;index.html&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;hidden&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Dashboard&#x3C;/a&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x26;nbsp;&#x26;nbsp;&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;active&#x22;&#x3E;Dashboard&#x3C;/li&#x3E;
+    &#x3C;/ol&#x3E;
+    &#x3C;div class=&#x22;clearfix&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!--END TITLE &#x26; BREADCRUMB PAGE--&#x3E;&#x3C;!--BEGIN CONTENT--&#x3E;
+&#x3C;div class=&#x22;page-content&#x22;&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div id=&#x22;footer&#x22;&#x3E;
+        &#x3C;div class=&#x22;copyright&#x22;&#x3E;2014 &#xA9; &#x26;mu;Admin - Responsive Multi-Style Admin Template&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;!--END FOOTER--&#x3E;&#x3C;/div&#x3E;
+&#x3C;!--END PAGE WRAPPER--&#x3E;&#x3C;/div&#x3E;</pre>
+<h4 class="block-sub-heading">CSS Code Comment Sample</h4><pre class="prettyprint linenums">/**************************/
+/******* Wrapper *********/
+#wrapper {
+    width: 100%;
+    background: #141d25;
+}
+#page-wrapper {
+    padding: 0 !important;
+    background-color: #f0f2f5;
+    transition: 0.3s all linear;
+}
+@media (min-width: 768px) {
+    #page-wrapper {
+        position: relative;
+        margin: 0 0 0 250px;
+        padding: 0;
+    }
+}
+/******* Wrapper *********/
+/**************************/</pre>
+<h4 class="block-sub-heading">Javascript Code Comment Sample</h4><pre class="prettyprint linenums">/***********************************/
+/******* Carousel Customize *******/
+$(&apos;ul.list-indicators li&apos;).click(function(event) {
+    event.preventDefault();
+    $(&apos;ul.list-indicators li&apos;).removeClass(&apos;active&apos;);
+    $(this).addClass(&apos;active&apos;);
+});
+$(&apos;.carousel-left&apos;).click(function(event) {
+    event.preventDefault();
+    var active = $(&apos;ul.list-indicators li.active&apos;);
+    $(&apos;ul.list-indicators li&apos;).removeClass(&apos;active&apos;);
+    active.prev().addClass(&apos;active&apos;);
+});
+$(&apos;.carousel-right&apos;).click(function(event) {
+    event.preventDefault();
+    var active = $(&apos;ul.list-indicators li.active&apos;);
+    $(&apos;ul.list-indicators li&apos;).removeClass(&apos;active&apos;);
+    active.next().addClass(&apos;active&apos;);
+});
+/******* Carousel Customize *******/
+/*********************************/</pre>
+</div>
+<div id="tab-fonts" class="tab-pane fade"><h3 class="block-heading mtn">3. Fonts</h3>
+
+    <p>μAdmin Admin Template uses Open Sans Font and Oswald Font from Google Fonts.</p><pre class="prettyprint linenums">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Oswald:400,700,300&quot;&gt;</pre>
+</div>
+<div id="tab-colors-theme" class="tab-pane fade"><h3 class="block-heading mtn">4. Theme Colors</h3>
+	<p>μAdmin Admin Template has variable choice for your theme such as <code>red</code>,<code>orange</code>, <code>green</code>, <code>yellow</code>, <code>blue</code>, <code>violet</code>,
+        <code>pink</code>, <code>grey</code>, <code>default</code>, <code>white</code>.</p>
+    <p><img src="images/docs/2.jpg" alt="" class="img-responsive"></p><pre class="prettyprint linenums">&#x3C;div id=&#x22;theme-setting&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22; data-toggle=&#x22;dropdown&#x22; class=&#x22;btn-theme-setting&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;content-theme-setting&#x22;&#x3E;&#x3C;h4 class=&#x22;mtn&#x22;&#x3E;Theme Styles&#x3C;/h4&#x3E;&#x3C;select id=&#x22;list-style&#x22; class=&#x22;form-control&#x22;&#x3E;
+            &#x3C;option value=&#x22;style1&#x22;&#x3E;Flat Squared style&#x3C;/option&#x3E;
+            &#x3C;option value=&#x22;style2&#x22;&#x3E;Flat Rounded style&#x3C;/option&#x3E;
+        &#x3C;/select&#x3E;&#x3C;br/&#x3E;&#x3C;h4 class=&#x22;mtn&#x22;&#x3E;Theme Colors&#x3C;/h4&#x3E;
+            &#x3C;ul id=&#x22;list-color&#x22; class=&#x22;list-unstyled list-inline&#x22;&#x3E;
+                &#x3C;li data-color=&#x22;green-dark&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Green - Dark&#x22; class=&#x22;green-dark active&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;red-dark&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Red - Dark&#x22; class=&#x22;red-dark&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;pink-dark&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Pink - Dark&#x22; class=&#x22;pink-dark&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;blue-dark&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Blue - Dark&#x22; class=&#x22;blue-dark&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;yellow-dark&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Yellow - Dark&#x22; class=&#x22;yellow-dark&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;green-grey&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Green - Grey&#x22; class=&#x22;green-grey&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;red-grey&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Red - Grey&#x22; class=&#x22;red-grey&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;pink-grey&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Pink - Grey&#x22; class=&#x22;pink-grey&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;blue-grey&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Blue - Grey&#x22; class=&#x22;blue-grey&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;yellow-grey&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Yellow - Grey&#x22; class=&#x22;yellow-grey&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;yellow-green&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Yellow - Green&#x22; class=&#x22;yellow-green&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;orange-grey&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Orange - Grey&#x22; class=&#x22;orange-grey&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;pink-blue&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Pink - Blue&#x22; class=&#x22;pink-blue&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;pink-violet&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Pink - Violet&#x22; class=&#x22;pink-violet&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;orange-violet&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Orange - Violet&#x22; class=&#x22;orange-violet&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;pink-green&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Pink - Green&#x22; class=&#x22;pink-green&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;pink-brown&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Pink - Brown&#x22; class=&#x22;pink-brown&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;orange-blue&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Orange - Blue&#x22; class=&#x22;orange-blue&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;yellow-blue&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Yellow - Blue&#x22; class=&#x22;yellow-blue&#x22;&#x3E;&#x3C;/li&#x3E;
+                &#x3C;li data-color=&#x22;green-blue&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Green - Blue&#x22; class=&#x22;green-blue&#x22;&#x3E;&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;</pre>
+	<p>You can easily install theme with this code: </p>
+    <pre class="prettyprint linenums">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/themes/default.css&quot; id=&quot;color-style&quot;&gt;</pre>
+	<p>Example: Change Default Theme Color to Blue: <code>css/themes/default.css</code> to <code>css/themes/blue.css</code></p></div>
+<div id="tab-top-bar" class="tab-pane fade"><h3 class="block-heading mtn">5. Top Bar</h3><h4 class="block-sub-heading">
+    Top Menu</h4>
+
+    <p>
+
+    <div class="row">
+        <div class="col-md-6"><img src="images/docs/3.jpg" alt="" class="img-responsive"></div>
+        <div class="col-md-6"><img src="images/docs/4.jpg" alt="" class="img-responsive"></div>
+    </div>
+    </p><pre class="prettyprint linenums">&#x3C;ul class=&#x22;nav navbar-top-links navbar-right&#x22;&#x3E;
+&#x3C;li class=&#x22;dropdown&#x22;&#x3E;&#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-bell fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-green&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+    &#x3C;ul class=&#x22;dropdown-menu dropdown-alerts&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;p&#x3E;You have 14 new notifications&#x3C;/p&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;div class=&#x22;dropdown-slimscroll&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-blue&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-comment&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;New Comment&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;4 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-violet&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-twitter&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;3 New Followers&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;12 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-pink&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;Message Sent&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;15 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-green&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;New Task&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;18 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-yellow&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-upload&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;Server Rebooted&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;19 mins ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-green&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;New Task&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;2 days ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;label label-pink&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;Message Sent&#x3C;span class=&#x22;pull-right text-muted small&#x22;&#x3E;5 days ago&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;last&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;text-right&#x22;&#x3E;See all alerts&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li class=&#x22;dropdown&#x22;&#x3E;&#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-orange&#x22;&#x3E;7&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+    &#x3C;ul class=&#x22;dropdown-menu dropdown-messages&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;p&#x3E;You have 14 new messages&#x3C;/p&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;div class=&#x22;dropdown-slimscroll&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;Jessica Spencer&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Smith&#x3C;span class=&#x22;label label-blue pull-right&#x22;&#x3E;New&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Doe&#x3C;span class=&#x22;label label-orange pull-right&#x22;&#x3E;10 min&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Smith&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;avatar&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x3C;/span&#x3E;&#x3C;span class=&#x22;info&#x22;&#x3E;&#x3C;span class=&#x22;name&#x22;&#x3E;John Smith&#x3C;/span&#x3E;&#x3C;span class=&#x22;desc&#x22;&#x3E;Lorem ipsum dolor sit amet...&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;last&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Read all messages&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li class=&#x22;dropdown&#x22;&#x3E;&#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-yellow&#x22;&#x3E;8&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+    &#x3C;ul class=&#x22;dropdown-menu dropdown-tasks&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;p&#x3E;You have 14 pending tasks&#x3C;/p&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;div class=&#x22;dropdown-slimscroll&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;task-item&#x22;&#x3E;Fix the HTML code&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;40%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+
+                        &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                            &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;40&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 40%;&#x22; class=&#x22;progress-bar progress-bar-orange&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;40% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;task-item&#x22;&#x3E;Make a wordpress theme&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;60%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+
+                        &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                            &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;60&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 60%;&#x22; class=&#x22;progress-bar progress-bar-blue&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;60% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;task-item&#x22;&#x3E;Convert PSD to HTML&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;55%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+
+                        &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                            &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;55&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 55%;&#x22; class=&#x22;progress-bar progress-bar-green&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;55% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;span class=&#x22;task-item&#x22;&#x3E;Convert HTML to Wordpress&#x3C;small class=&#x22;pull-right text-muted&#x22;&#x3E;78%&#x3C;/small&#x3E;&#x3C;/span&#x3E;
+
+                        &#x3C;div class=&#x22;progress progress-sm&#x22;&#x3E;
+                            &#x3C;div role=&#x22;progressbar&#x22; aria-valuenow=&#x22;78&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22; style=&#x22;width: 78%;&#x22; class=&#x22;progress-bar progress-bar-yellow&#x22;&#x3E;&#x3C;span class=&#x22;sr-only&#x22;&#x3E;78% Complete (success)&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;last&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;See all tasks&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li class=&#x22;dropdown topbar-user&#x22;&#x3E;&#x3C;a data-hover=&#x22;dropdown&#x22; href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-responsive img-circle&#x22;/&#x3E;&#x26;nbsp;&#x3C;span&#x3E;John Doe&#x3C;/span&#x3E;&#x26;nbsp;&#x3C;span class=&#x22;caret&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+    &#x3C;ul class=&#x22;dropdown-menu dropdown-user pull-right&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-profile.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-user&#x22;&#x3E;&#x3C;/i&#x3E;My Profile&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;page-calendar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-calendar&#x22;&#x3E;&#x3C;/i&#x3E;My Calendar&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;email-inbox.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;My Inbox&#x3C;span class=&#x22;badge badge-danger&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;My Tasks&#x3C;span class=&#x22;badge badge-success&#x22;&#x3E;7&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;divider&#x22;&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-lock-screen.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-lock&#x22;&#x3E;&#x3C;/i&#x3E;Lock Screen&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signin.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-key&#x22;&#x3E;&#x3C;/i&#x3E;Log Out&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li id=&#x22;topbar-chat&#x22; class=&#x22;hidden-xs&#x22;&#x3E;&#x3C;a href=&#x22;javascript:void(0)&#x22; class=&#x22;btn-chat&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-comments&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;badge badge-info&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</pre>
+    <h4 class="block-sub-heading">Search Form</h4>
+
+<p><img src="images/docs/5.jpg" alt="" class="img-responsive"></p><pre class="prettyprint linenums">&#x3C;form id=&#x22;topbar-search&#x22; action=&#x22;&#x22; method=&#x22;&#x22; class=&#x22;hidden-sm hidden-xs&#x22;&#x3E;
+    &#x3C;div class=&#x22;input-icon right&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;input type=&#x22;text&#x22; placeholder=&#x22;Search here...&#x22; class=&#x22;form-control&#x22;/&#x3E;&#x3C;/div&#x3E;
+&#x3C;/form&#x3E;</pre>
+</div>
+<div id="tab-sidebar-menu" class="tab-pane fade"><h3 class="block-heading mtn">6. Sidebar Menu</h3><h4
+        class="block-sub-heading">Main Menu</h4>
+
+    <p><img src="images/docs/7.jpg" alt="" class="img-responsive"></p><pre class="prettyprint linenums">&#x3C;nav id=&#x22;sidebar&#x22; role=&#x22;navigation&#x22; class=&#x22;navbar-default navbar-static-side&#x22;&#x3E;
+    &#x3C;div class=&#x22;sidebar-collapse menu-scroll&#x22;&#x3E;
+        &#x3C;ul id=&#x22;side-menu&#x22; class=&#x22;nav&#x22;&#x3E;
+            &#x3C;li class=&#x22;user-panel&#x22;&#x3E;
+                &#x3C;div class=&#x22;thumb&#x22;&#x3E;&#x3C;img src=&#x22;https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg&#x22; alt=&#x22;&#x22; class=&#x22;img-circle&#x22;/&#x3E;&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;info&#x22;&#x3E;&#x3C;p&#x3E;John Doe&#x3C;/p&#x3E;
+                    &#x3C;ul class=&#x22;list-inline list-unstyled&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-profile.html&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Profile&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-user&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;email-inbox.html&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Mail&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Setting&#x22; data-toggle=&#x22;modal&#x22; data-target=&#x22;#modal-config&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cog&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signin.html&#x22; data-hover=&#x22;tooltip&#x22; title=&#x22;Logout&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sign-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;clearfix&#x22;&#x3E;&#x3C;/div&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;active&#x22;&#x3E;&#x3C;a href=&#x22;index.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tachometer fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Dashboard&#x3C;/span&#x3E;&#x3C;span class=&#x22;badge badge-yellow&#x22;&#x3E;3&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-desktop fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Layouts&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-left-sidebar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-align-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Left Sidebar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-left-sidebar-collapsed.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-left&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Left Sidebar Collapsed&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-right-sidebar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-align-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Right Sidebar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-right-sidebar-collapsed.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Right Sidebar Collapsed&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-horizontal-menu.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-header&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Horizontal Menu&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-horizontal-menu-sidebar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-h-square&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Horizontal Menu &#x26; Sidebar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-fixed-topbar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-magnet&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Fixed Topbar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-boxed.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-columns&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Boxed Layout&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-hidden-footer.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-eye-slash&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Hidden Footer&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-header-topbar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-paperclip&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Header &#x26; Topbar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;layout-title-breadcrumb.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-link&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Title &#x26; Breadcrumb&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-send-o fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;UI Elements&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-generals.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-briefcase&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Generals&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-panels.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-th-large&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Panels&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-buttons.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-hand-o-up&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Buttons&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-tabs.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-trello&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Tabs&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-progressbars.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-ellipsis-h&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Progress Bars&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-editors.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-edit&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Editors&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-typography.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-font&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Typography&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-modals.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-list-alt&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Modals&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-sliders.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-arrows-h&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sliders&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-nestable-list.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-list-ol&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Nestable List&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-icons.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tint&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Icons&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-notific8-notifications.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Notific8 Notifications&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-toastr-notifications.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-triangle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Toastr Notifications&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-checkbox-radio.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-dot-circle-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Checkbox &#x26; Radio&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-treeview.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tasks&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Tree View&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;ui-portlets.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-instagram&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Portlets&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-edit fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Forms&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;form-layouts.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-columns&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Layouts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;form-basic.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-file-text-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Basics&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;form-components.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cubes&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Components&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;form-wizard.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-magic&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;From Wizard&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;form-validation.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Form Validation&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;form-multiple-file-upload.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-upload&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Multiple File Upload&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;form-dropzone-file-upload.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-cloud-upload&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Dropzone File Upload&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-th-list fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Tables&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;table-basic.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-th-large&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Basic Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;table-responsive.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tablet&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Responsive Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;table-action.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-tencent-weibo&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Action Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;table-filter.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-filter&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Filter Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;table-advanced.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-indent&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Advanced Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;table-sample.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-table&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sample Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-file-o fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Pages&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;page-gallery.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-suitcase&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Gallery&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;page-timeline.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-steam&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Timeline&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;page-blog.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-puzzle-piece&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Blog&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;page-blog-item.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-chain&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Blog Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;page-about.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-group&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;About Us&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;page-contact.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-send-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Contact Us&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;page-calendar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-calendar&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Full Calendar&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-gift fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Extras&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-profile.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-user&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;User Profile&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signin.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sign-in&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sign In&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-signup.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sign-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Sign Up&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-lock-screen.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-lock&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Lock Screen&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-invoice.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-print&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Invoice&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-faq.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-graduation-cap&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;FAQ&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-pricing-table.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-money&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Pricing Tables&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-blank.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-file-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Blank&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-404.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;404 Page&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;extra-500.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-exclamation-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;500 Page&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;javascript:void(0)&#x22; title=&#x22;FullScreen&#x22; class=&#x22;btn-fullscreen&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-arrows&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Full Screen&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-sitemap fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Multi-Level Dropdown&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Second Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Second Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-third-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E; Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-envelope-o&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Email&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;email-inbox.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-inbox&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Inbox&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;email-compose-mail.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-pencil&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Compose Mail&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;email-view-mail.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-eye&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;View Mail&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-bar-chart-o fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Charts&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-flotchart.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Flot Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-chartjs.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Chartjs&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;HighCharts&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;nav nav-third-level&#x22;&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-line.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Line Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-area.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Area Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-column-bar.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Column &#x26; Bar Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-pie.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Pie Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-scatter-bubble.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Scatter &#x26; Bubble Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-dynamic.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Dynamic Charts&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-combinations.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Combinations&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;&#x3C;a href=&#x22;charts-highchart-more.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;More Chart Types&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;&#x3C;a href=&#x22;animations.html&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-slack fa-fw&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;menu-title&#x22;&#x3E;Animations&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</pre>
+    <h4 class="block-sub-heading">Multi-Level Menu</h4>
+
+    <p><img src="images/docs/8.jpg" alt="" class="img-responsive"></p><pre class="prettyprint linenums">&#x3C;ul class=&#x22;nav nav-second-level&#x22;&#x3E;
+  &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Second Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Second Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level&#x3C;/span&#x3E;&#x3C;span class=&#x22;fa arrow&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+      &#x3C;ul class=&#x22;nav nav-third-level&#x22;&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E; Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-angle-double-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;span class=&#x22;submenu-title&#x22;&#x3E;Third Level Item&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+  &#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</pre>
+</div>
+<div id="tab-core-stylesheet" class="tab-pane fade"><h3 class="block-heading mtn">7. Core Stylesheet</h3>
+
+    <p><code>style-responsive.css</code> control layouts, components for mobile view (responsive).</p>
+    <pre class="prettyprint linenums">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/style-responsive.css&quot;&gt;</pre>
+    <br>
+
+    <p>Two style and many color theme in each style. Example:</p>
+    <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/themes/style1/green-dark.css&#x22; id=&#x22;theme-change&#x22; class=&#x22;style-change color-change&#x22;&#x3E;</pre>
+</div>
+<div id="tab-javascript-plugins" class="tab-pane fade"><h3 class="block-heading mtn">8. Javascript Plugins &
+    Resources</h3>
+
+    <div class="row">
+        <div class="col-md-3"><p>Select Plugins or Resources:</p></div>
+        <div class="col-md-3"><select id="plugins-list" onchange="PluginShow();" class="form-control">
+            <option value="animatecss">Jquery Animate.css</option>
+            <option value="clockface">Bootstrap Clockface</option>
+      			<option value="datepicker">Bootstrap DatePicker</option>
+      			<option value="daterangepicker">Bootstrap DateRangePicker</option>
+      			<option value="datetimepicker">Bootstrap DateTimePicker</option>
+      			<option value="hoverdropdown">Bootstrap Hover Dropdown</option>
+      			<option value="switch">Bootstrap Switch</option>
+      			<option value="timepicker">Bootstrap TimePicker</option>
+
+            <option value="bootstrap-markdown">bootstrap-markdown</option>
+            <option value="bootstrap-progressbar">bootstrap-progressbar</option>
+            <option value="bootstrap-wysihtml5">bootstrap-wysihtml5</option>
+            <option value="calendar">calendar</option>
+            <!-- <option value="chartjs">chartjs</option>
+            <option value="gmaps">gmaps</option>
+            <option value="icheck">iCheck</option> -->
+            <option value="rangeSlider">rangeSlider</option>
+            <option value="notific8">notific8</option>
+            <option value="steps">steps</option>
+            <option value="tablesorter">tablesorter</option>
+            <option value="toastr">toastr</option>
+            <option value="treetable">treetable</option>
+            <option value="lightbox">lightbox</option>
+            <option value="mixitup">mixitup</option>
+            <option value="moment">moment</option>
+            <option value="nouislider">nouislider</option>
+            <option value="summernote">summernote</option>
+
+      			<option value="ckeditor">Jquery Ckeditor</option>
+            <option value="datatables">Jquery Datatables</option>
+            <option value="dropzone">Jquery Dropzone</option>
+            <option value="flotchart">Jquery Flot Chart</option>
+            <option value="fontawesome">Jquery Font Awesome</option>
+            <option value="fullcalendar">Jquery FullCalendar</option>
+            <option value="animatenumber">Jquery Animate Number</option>
+            <option value="cookie">Jquery Cookie</option>
+            <option value="fileupload">Jquery File Upload</option>
+            <option value="knob">Jquery Knob</option>
+            <option value="nestable">Jquery Nestable</option>
+            <option value="newsticker">Jquery News Ticker</option>
+            <option value="pace">Jquery Pace</option>
+            <option value="validation">Jquery Validation</option>
+            <option value="metismenu">Jquery MetisMenu</option>
+            <option value="skycons">Skycons</option>
+            <option value="slimscroll">Jquery SlimScroll</option>
+            <option value="highcharts">Jquery HighCharts</option>
+            <option value="jplist"> jPList - jQuery Data Grid Controls</option>
+            <option value="introjs">jQuery introjs</option>
+			<option value="tinymce">Jquery Tinymce</option>
+        </select></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="animatecss" class="plugin-content plugin-content-active"><h4 class="block-heading">Animate.css</h4>
+
+                <p><code>Animate.css</code> is a bunch of cool, fun, and cross-browser animations for you to use in your
+                    projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</p><br>
+                <h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/animate.css/animate.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://daneden.github.io/animate.css/" target="_blank">http://daneden.github.io/animate.css</a>
+                    </p></div>
+                </div>
+            </div>
+		        <div id="clockface" class="plugin-content"><h4 class="block-heading">Bootstrap Clockface</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-clockface/css/clockface.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-clockface/js/clockface.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-components.html" target="_blank">form-components.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://vitalets.github.io/clockface/"
+                                                target="_blank">http://vitalets.github.io/clockface/</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="datepicker" class="plugin-content"><h4 class="block-heading">Bootstrap DatePicker</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-datepicker/css/datepicker.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-datepicker/js/bootstrap-datepicker.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-components.html" target="_blank">form-components.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://www.eyecon.ro/bootstrap-datepicker/"
+                                                target="_blank">http://www.eyecon.ro/bootstrap-datepicker/</a>
+                    </p></div>
+                </div>
+            </div>
+			<div id="daterangepicker" class="plugin-content"><h4 class="block-heading">Bootstrap DateRangePicker</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-daterangepicker/daterangepicker-bs3.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-daterangepicker/daterangepicker.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-components.html" target="_blank">form-components.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="https://github.com/dangrossman/bootstrap-daterangepicker"
+                                                target="_blank">https://github.com/dangrossman/bootstrap-daterangepicker</a>
+                    </p></div>
+                </div>
+            </div>
+			<div id="datetimepicker" class="plugin-content"><h4 class="block-heading">Bootstrap DateTimePicker</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-components.html" target="_blank">form-components.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://tarruda.github.io/bootstrap-datetimepicker/"
+                                                target="_blank">http://tarruda.github.io/bootstrap-datetimepicker/</a>
+                    </p></div>
+                </div>
+            </div>
+      <div id="bootstrap-markdown" class="plugin-content"><h4 class="block-heading">Bootstrap-markdown</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-markdown/css/bootstrap-markdown.min.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-markdown/js/bootstrap-markdown.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/ui-editors.html" target="_blank">ui-editors.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://toopay.github.io/bootstrap-markdown/"
+                                                target="_blank">http://toopay.github.io/bootstrap-markdown/</a>
+                    </p></div>
+                </div>
+            </div>
+      <div id="bootstrap-progressbar" class="plugin-content"><h4 class="block-heading">Bootstrap-progressbar</h4>
+
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.1.1.min.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-progressbar/bootstrap-progressbar.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-progressbars.html" target="_blank">ui-progressbars.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://www.minddust.com/bootstrap-progressbar/"
+                                          target="_blank">http://www.minddust.com/bootstrap-progressbar/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="bootstrap-wysihtml5" class="plugin-content"><h4 class="block-heading">Bootstrap-wysihtml5</h4>
+
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-editors.html" target="_blank">ui-editors.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://tarruda.github.io/bootstrap-datetimepicker/"
+                                          target="_blank">http://tarruda.github.io/bootstrap-datetimepicker/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="calendar" class="plugin-content"><h4 class="block-heading">Calendar</h4>
+
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/fullcalendar/fullcalendar.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/fullcalendar/fullcalendar.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/page-calendar" target="_blank">page-calendar.html</a>
+              </p></div>
+          </div>
+          <br>
+      <div id="chartjs" class="plugin-content"><h4 class="block-heading">Chartjs</h4>
+
+          
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/chart.js/Chart.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/charts-chartjs" target="_blank">charts-chartjs.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://www.chartjs.org/"
+                                          target="_blank">http://www.chartjs.org/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="gmaps" class="plugin-content"><h4 class="block-heading">Gmaps</h4>
+
+          ttyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/gmaps/gmaps.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/page-contact.html" target="_blank">page-contact.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://hpneo.github.io/gmaps/"
+                                          target="_blank">http://hpneo.github.io/gmaps/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="icheck" class="plugin-content"><h4 class="block-heading">iCheck</h4>
+
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/iCheck/skins/all.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/iCheck/icheck.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-checkbox-radio.html" target="_blank">ui-checkbox-radio.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://tarruda.github.io/bootstrap-datetimepicker/"
+                                          target="_blank">http://tarruda.github.io/bootstrap-datetimepicker/</a>
+              </p></div>
+          </div>
+      </div>
+          
+      </div>
+			<div id="hoverdropdown" class="plugin-content"><h4 class="block-heading">Bootstrap Hover Dropdown</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="https://github.com/CWSpear/bootstrap-hover-dropdown"
+                                                target="_blank">https://github.com/CWSpear/bootstrap-hover-dropdown</a>
+                    </p></div>
+                </div>
+            </div>
+			<div id="switch" class="plugin-content"><h4 class="block-heading">Bootstrap Switch</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-switch/css/bootstrap-switch.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-switch/js/bootstrap-switch.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-components.html" target="_blank">form-components.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://www.bootstrap-switch.org/"
+                                                target="_blank">http://www.bootstrap-switch.org/</a>
+                    </p></div>
+                </div>
+            </div>
+			<div id="timepicker" class="plugin-content"><h4 class="block-heading">Bootstrap TimePicker</h4>
+
+                <p></p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/bootstrap-timepicker/js/bootstrap-timepicker.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-components.html" target="_blank">form-components.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://jdewit.github.io/bootstrap-timepicker/"
+                                                target="_blank">http://jdewit.github.io/bootstrap-timepicker/</a>
+                    </p></div>
+                </div>
+            </div>
+      <div id="rangeSlider" class="plugin-content"><h4 class="block-heading">rangeSlider</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/ion.rangeSlider/css/ion.rangeSlider.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/ion.rangeSlider/js/ion.rangeSlider.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-sliders.html" target="_blank">ui-sliders.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://andreruffert.github.io/rangeslider.js/"
+                                          target="_blank">http://andreruffert.github.io/rangeslider.js/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="notific8" class="plugin-content"><h4 class="block-heading">notific8</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-notific8/jquery.notific8.min.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-notific8/jquery.notific8.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-notific8-notifications.html" target="_blank">ui-notific8-notifications.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://plugins.jquery.com/notific8/"
+                                          target="_blank">http://plugins.jquery.com/notific8/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="steps" class="plugin-content"><h4 class="block-heading">steps</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-steps/css/jquery.steps.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-validate/jquery.validate.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/form-wizard.html" target="_blank">form-wizard.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://www.jquery-steps.com/"
+                                          target="_blank">http://www.jquery-steps.com/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="tablesorter" class="plugin-content"><h4 class="block-heading">tablesorter</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-tablesorter/themes/blue/style-custom.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-tablesorter/jquery.tablesorter.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/table-advanced.html" target="_blank">table-advanced.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://tablesorter.com/"
+                                          target="_blank">http://tablesorter.com/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="toastr" class="plugin-content"><h4 class="block-heading">toastr</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-toastr/toastr.min.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-toastr/toastr.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-toastr-notifications.html" target="_blank">ui-toastr-notifications.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://https://github.com/CodeSeven/toastr"
+                                          target="_blank">https://github.com/CodeSeven/toastr</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="treetable" class="plugin-content"><h4 class="block-heading">treetable</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-treetable/stylesheets/jquery.treetable.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-treetable/javascripts/src/jquery.treetable.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-treeview.html" target="_blank">ui-treeview.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://https://plugins.jquery.com/treetable/"
+                                          target="_blank">https://plugins.jquery.com/treetable//a>
+              </p></div>
+          </div>
+      </div>
+      <div id="lightbox" class="plugin-content"><h4 class="block-heading">lightbox</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/lightbox/css/lightbox.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/lightbox/js/lightbox.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/page-gallery.html" target="_blank">page-gallery.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="https://www.lokeshdhakar.com/projects/lightbox2/?u=9"
+                                          target="_blank">https://www.lokeshdhakar.com/projects/lightbox2/?u=9</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="mixitup" class="plugin-content"><h4 class="block-heading">mixitup</h4>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/mixitup/src/jquery.mixitup.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/page-gallery.html" target="_blank">page-gallery.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="https://mixitup.kunkalabs.com/"
+                                          target="_blank">https://mixitup.kunkalabs.com/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="moment" class="plugin-content"><h4 class="block-heading">moment</h4>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/moment/moment.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/form-components.html" target="_blank">form-components.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="https://momentjs.com/"
+                                          target="_blank">https://momentjs.com/</a>
+              </p></div>
+          </div>
+      </div>
+      
+      <div id="nouislider" class="plugin-content"><h4 class="block-heading">nouislider</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/nouislider/jquery.nouislider.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/nouislider/jquery.nouislider.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-sliders.html" target="_blank">ui-sliders.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="https://refreshless.com/nouislider/"
+                                          target="_blank">https://refreshless.com/nouislider/</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="summernote" class="plugin-content"><h4 class="block-heading">summernote</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/summernote/summernote.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/summernote/summernote.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/ui-editors.html" target="_blank">ui-editors.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="https://hackerwins.github.io/summernote/features.html"
+                                          target="_blank">https://hackerwins.github.io/summernote/features.html</a>
+              </p></div>
+          </div>
+      </div>
+      <div id="lightbox" class="plugin-content"><h4 class="block-heading">lightbox</h4>
+          <p></p><br><h4 class="block-heading">Css File</h4>
+          <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/lightbox/css/lightbox.css&#x22;&#x3E;</pre>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/lightbox/js/lightbox.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/page-gallery.html" target="_blank">page-gallery.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="https://www.lokeshdhakar.com/projects/lightbox2/?u=9"
+                                          target="_blank">https://www.lokeshdhakar.com/projects/lightbox2/?u=9</a>
+              </p></div>
+          </div>
+      </div>
+			<div id="ckeditor" class="plugin-content"><h4 class="block-heading">Jquery Ckeditor</h4>
+
+                <p>CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor.</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/ckeditor/ckeditor.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-editors.html" target="_blank">form-editors.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://ckeditor.com/" target="_blank">http://ckeditor.com/</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="datatables" class="plugin-content"><h4 class="block-heading">Datatables</h4>
+
+                <p><code>Datatables</code> is a plug-in for the jQuery Javascript library. It is a highly flexible tool,
+                    based upon the foundations of progressive enhancement, which will add advanced interaction controls
+                    to any HTML table.</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/datatables/css/dataTables.bootstrap.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/datatables/js/jquery.dataTables.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/datatables/js/dataTables.bootstrap.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/datatables/js/jquery.jeditable.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/table-editable.html"
+                                                target="_blank">table-editable.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="https://datatables.net/"
+                                                target="_blank">https://datatables.net</a></p></div>
+                </div>
+            </div>
+            <div id="dropzone" class="plugin-content"><h4 class="block-heading">Dropzone</h4>
+
+                <p><code>Dropzone</code> is an open source library that provides drag'n'drop file uploads with image
+                    previews.</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/dropzone/css/dropzone.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/dropzone/js/dropzone.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/form-dropzone-file-upload.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-dropzone-file-upload.html" target="_blank">form-dropzone-file-upload.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://www.dropzonejs.com" target="_blank">http://www.dropzonejs.com</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="flotchart" class="plugin-content"><h4 class="block-heading">Flot Chart</h4>
+
+                <p><code>Flot
+                Chart</code> is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive
+                    looks and interactive features.</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.categories.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.tooltip.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.resize.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.fillbetween.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.stack.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/flot-chart/jquery.flot.spline.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/chart.html" target="_blank">chart.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://www.flotcharts.org" target="_blank">http://www.flotcharts.org</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="fontawesome" class="plugin-content"><h4 class="block-heading">Font Awesome</h4>
+
+                <p><code>Font
+                Awesome</code> gives you scalable vector icons that can instantly be customized — size, color, drop
+                    shadow, and anything that can be done with the power of CSS.</p><br><h4 class="block-heading">Css
+                    File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/font-awesome/css/font-awesome.min.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/ui-icons.html" target="_blank">ui-icons.html</a></p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://fortawesome.github.io/Font-Awesome" target="_blank">http://fortawesome.github.io/Font-Awesome</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="fullcalendar" class="plugin-content"><h4 class="block-heading">FullCalendar</h4>
+
+                <p><code>Font
+                Awesome</code> is a jQuery plugin that provides a full-sized, drag & drop calendar like the one below.
+                    It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed
+                    format (an extension is provided for Google Calendar). It is visually customizable and exposes hooks
+                    for user-triggered events (like clicking or dragging an event).</p><br><h4 class="block-heading">Css
+                    File</h4><pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/fullcalendar/fullcalendar.css&#x22;&#x3E;
+&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/fullcalendar/fullcalendar.print.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/fullcalendar/fullcalendar.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/page-fullcalendar.html" target="_blank">page-fullcalendar.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://arshaw.com/fullcalendar" target="_blank">http://arshaw.com/fullcalendar</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="animatenumber" class="plugin-content"><h4 class="block-heading">animateNumber</h4>
+
+                <p><code>animateNumber</code> is a jQuery numbers animation plugin, adds 'number' property and step
+                    function to jQuery's animate function properties.</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-animateNumber/jquery.animateNumber.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://aishek.github.io/jquery-animateNumber" target="_blank">http://aishek.github.io/jquery-animateNumber</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="cookie" class="plugin-content"><h4 class="block-heading">Jquery Cookie</h4>
+
+                <p><code>Jquery
+                Cookie</code> is a simple, lightweight jQuery plugin for reading, writing and deleting cookies.</p><br>
+                <h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-cookie/jquery.cookie.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="https://github.com/carhartl/jquery-cookie" target="_blank">https://github.com/carhartl/jquery-cookie</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="fileupload" class="plugin-content"><h4 class="block-heading">Jquery File Upload</h4>
+
+                <p><code>Jquery
+                File
+                Upload</code> is File Upload widget with multiple file selection, drag&drop support, progress bars,
+                    validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and
+                    resumable file uploads and client-side image resizing. Works with any server-side platform (PHP,
+                    Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.</p>
+                <br><h4 class="block-heading">Css File</h4><pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-file-upload/css/jquery.fileupload.css&#x22;&#x3E;
+&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-file-upload/css/jquery.fileupload-ui.css&#x22;&#x3E;
+&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-file-upload/css/blueimp-gallery.min.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-file-upload/js/vendor/jquery.ui.widget.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/vendor/tmpl.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/vendor/load-image.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/vendor/canvas-to-blob.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/vendor/jquery.blueimp-gallery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.iframe-transport.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.fileupload.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.fileupload-process.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.fileupload-image.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.fileupload-audio.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.fileupload-video.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.fileupload-validate.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/jquery.fileupload-ui.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendors/jquery-file-upload/js/cors/jquery.xdr-transport.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-multiple-file-upload.html" target="_blank">form-multiple-file-upload.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="https://github.com/blueimp/jQuery-File-Upload" target="_blank">https://github.com/blueimp/jQuery-File-Upload</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="knob" class="plugin-content"><h4 class="block-heading">Jquery Knob</h4>
+
+                <p><code>Jquery
+                Knob</code> is canvas based, no png or jpg sprites. Touch, mouse and mousewheel, keyboard events
+                    implemented. Downward compatible, overloads an input element.</p><br><h4 class="block-heading">Css
+                    File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-knob/jquery.knob.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/ui-knob.html" target="_blank">ui-knob.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://anthonyterrien.com/knob" target="_blank">http://anthonyterrien.com/knob</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="nestable" class="plugin-content"><h4 class="block-heading">Jquery Nestable</h4>
+
+                <p><code>Jquery
+                Nestable</code> is drag & drop hierarchical list with mouse and touch compatibility.</p><br><h4
+                        class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-nestable/nestable.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-nestable/jquery.nestable.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/ui-nestable-list.html" target="_blank">ui-nestable-list.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://dbushell.github.io/Nestable" target="_blank">http://dbushell.github.io/Nestable</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="newsticker" class="plugin-content"><h4 class="block-heading">Jquery News Ticker</h4>
+
+                <p><code>Jquery
+                News
+                Ticker</code> brings a lightweight and easy to use news ticker to jQuery.</p><br><h4
+                        class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-news-ticker/jquery.news-ticker.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-news-ticker/jquery.news-ticker.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://jsfiddle.net/israelwebdev/YsSpY/8" target="_blank">http://jsfiddle.net/israelwebdev/YsSpY/8</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="pace" class="plugin-content"><h4 class="block-heading">Jquery Pace</h4>
+
+                <p><code>Jquery
+                Pace</code> is automatic page load progress bar</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">&#x3C;link type=&#x22;text/css&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;vendors/jquery-pace/pace.css&#x22;&#x3E;</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-pace/pace.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://github.hubspot.com/pace" target="_blank">http://github.hubspot.com/pace</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="validation" class="plugin-content"><h4 class="block-heading">Jquery Validation</h4>
+
+                <p><code>Jquery
+                Validation</code> is a jQuery plugin makes simple clientside form validation trivial, while offering
+                    lots of option for customization. That makes a good choice if you’re building something new from
+                    scratch, but also when you’re trying to integrate it into an existing application with lots of
+                    existing markup. The plugin comes bundled with a useful set of validation methods, including URL and
+                    email validation, while providing an API to write your own methods. All bundled methods come with
+                    default error messages in english and translations into 37 locales.</p><br><h4
+                        class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-validation/dist/jquery.validate.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-validation.html" target="_blank">form-validation.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation"
+                                                target="_blank">http://bassistance.de/jquery-plugins/jquery-plugin-validation</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="metismenu" class="plugin-content"><h4 class="block-heading">Jquery metisMenu</h4>
+
+                <p><code>Jquery
+                metisMenu</code> is a easy menu jQuery plugin for Twitter Bootstrap 3.</p><br><h4 class="block-heading">
+                    Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/metisMenu/jquery.metisMenu.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="https://github.com/onokumus/metisMenu" target="_blank">https://github.com/onokumus/metisMenu</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="skycons" class="plugin-content"><h4 class="block-heading">Skycons</h4>
+
+                <p><code>Skycons</code> is a set of ten animated weather glyphs, procedurally generated by JavaScript
+                    using the HTML5 canvas tag.</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/skycons/skycons.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://darkskyapp.github.io/skycons" target="_blank">http://darkskyapp.github.io/skycons</a>
+                    </p></div>
+                </div>
+            </div>
+            <div id="slimscroll" class="plugin-content"><h4 class="block-heading">Jquery slimScroll</h4>
+
+                <p><code>Jquery
+                slimScroll</code> is a small (4.6KB) jQuery plugin that transforms any div into a scrollable area with a
+                    nice scrollbar - similar to the one Facebook and Google started using in their products recently.
+                    slimScroll doesn't occupy any visual space as it only appears on a user initiated mouse-over. User
+                    can drag the scrollbar or use mouse-wheel to change the scroll value.</p><br><h4
+                        class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4>
+                <pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/slimScroll/jquery.slimscroll.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a></p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://rocha.la/jQuery-slimScroll" target="_blank">http://rocha.la/jQuery-slimScroll</a>
+                    </p></div>
+                </div>
+            </div>
+			<div id="tinymce" class="plugin-content"><h4 class="block-heading">Jquery Tinymce</h4>
+
+                <p>TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor control released as Open Source under LGPL.</p><br><h4 class="block-heading">Css File</h4>
+                <pre class="prettyprint linenums">...</pre>
+                <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/tinymce/js/tinymce/tinymce.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+                    <div class="col-md-6"><p><a href="../madmin_style1/form-editors.html" target="_blank">form-editors.html</a>
+                    </p></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+                    <div class="col-md-6"><p><a href="http://www.tinymce.com/" target="_blank">http://www.tinymce.com/</a>
+                    </p></div>
+                </div>
+            </div>
+        <div id="highcharts" class="plugin-content"><h4 class="block-heading">Jquery HighCharts</h4>
+          <p>Create interactive charts easily for your web projects.</p>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jquery-highcharts/highcharts.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/charts-area.html" target="_blank">charts-area.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://highcharts.com"
+                                          target="_blank">http://highcharts.com</a>
+              </p></div>
+          </div>
+        </div>
+
+        <div id="jplist" class="plugin-content"><h4 class="block-heading">jPList - jQuery Data Grid Controls</h4>
+          <p>jPList - jQuery Data Grid Controls is a flexible jQuery plugin for sorting, pagination and filtering of any HTML structure .</p>
+          <br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/jplist/minified/jplist.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/grid-deep-linking.html" target="_blank">grid-deep-linking.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://jplist.com/"
+                                          target="_blank">http://jplist.com/</a>
+              </p></div>
+          </div>
+        </div>
+        <div id="introjs" class="plugin-content"><h4 class="block-heading">jQuery introjs - Introduction javascript library</h4>
+          <p>Introjs - Better introductions for websites and features with a step-by-step guide for your projects.</p>
+          <br><h4 class="block-heading">Css File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/intro.js/introjs.css&#x22;&#x3E;&#x3C;/script&#x3E;</pre><br><h4 class="block-heading">Javascript File</h4><pre class="prettyprint linenums">&#x3C;script src=&#x22;vendors/intro.js/intro.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Demo</h4></div>
+              <div class="col-md-6"><p><a href="../madmin_style1/index.html" target="_blank">index.html</a>
+              </p></div>
+          </div>
+          <br>
+
+          <div class="row">
+              <div class="col-md-2"><h4 class="block-sub-heading mtn mbn">Home Page</h4></div>
+              <div class="col-md-6"><p><a href="http://usablica.github.io/intro.js/"
+                                          target="_blank">http://usablica.github.io/intro.js/</a>
+              </p></div>
+          </div>
+        </div>
+
+        </div>
+        
+    </div>
+</div>
+<div id="tab-change-logs" class="tab-pane fade"><h3 class="block-heading mtn">9. Change Logs</h3>
+      <h4 class="block-sub-heading">Version 1.2 - 08 July 2014</h4>
+      <ul>
+        <li><strong>Add 2 new style navigation</strong>
+          <ul>
+            <li>Menu with big icon & flat design</li>
+            <li>Menu with color transition</li>
+          </ul>  
+        </li>
+        <li><strong>Add jQuery introjs</strong></li>
+        <li><strong>Improve jquery cookie</strong>
+          <ul>
+            <li>User can make best theme by mix the style and color</li>
+            <li>Remember user's favourite theme and apply it to all pages</li>
+          </ul>
+        </li>
+        <li><strong>Set up Animation page run on Firefox browser</strong></li>
+        <li><strong>Set up responsive tabs for pages</strong>
+          <ul>
+            <li>Redisign for tab direction</li>
+            <li>Mobile&Tablet version for tabs accordion</li>
+          </ul>
+        </li>
+        <li><strong>Apply styles(Squared, Rounded, Bordered) for all pages in Datagrid menu</strong></li>
+        <li><strong>Reconstruct menu on layout-horozoltal-menu page</strong></li>
+        <li><strong>Fix bug on layout-header-topbar page</strong></li>
+      </ul>
+      <h4 class="block-sub-heading">Version 1.1 - 04 July 2014</h4>
+      <ul>
+        <li>Add new style: Bordered</li>
+        <li>Add Data Grids menu using jPList plugin
+          <ul>
+            <li>Layout Examples
+              <ul>
+                <li>DIVs Layout</li>
+                <li>Table Demo1</li>
+                <li>Table Demo2</li>
+                <li>2 Tables on the Page</li>
+                <li>UL/LI</li>
+              </ul>
+            </li>
+            <li>Actions Examples
+              <ul>
+                <li>Filters With UL/LI</li>
+                <li>Filters With SELECT</li>
+                <li>Double Sort</li>
+                <li>Deep Linking</li>
+                <li>Pagination Only</li>
+                <li>Without "Items per Page"</li>
+                <li>Hidden Sort</li>
+              </ul>
+            </li>
+            <li>jPList with jQuery UI
+              <ul>
+                <li>Ranger Slider</li>
+                <li>Date Picker Filter</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Add 2 options in timeline page
+          <ul>
+            <li>Full responsive</li>
+            <li>One column</li>
+          </ul>
+        </li>
+        <li>Update chat form in sidebar and dashboard page</li>
+        <li>Update checkall in datatable</li>
+        <li>Minor bug</li>
+      </ul>
+  <h4 class="block-sub-heading">Version 1.0 - 15 June 2014</h4>
+    <p>Initial Release.</p>
+</div>
+<div id="tab-end-documentation" class="tab-pane fade"><h3 class="block-heading mtn">10. Endding</h3>
+	<h3>Thank you for your purchase</h3>
+	<p>We hope you like our products and we look forward to work with you again in the future.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<!--loading bootstrap js-->
+<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="vendors/google-code-prettify/prettify.js"></script>
+<script src="js/documentation.js"></script>
+</body>
+</html>
